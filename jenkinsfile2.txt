@@ -1,0 +1,17 @@
+jenkins {
+
+    tool {
+        maven 'mvn'
+    }
+
+    environment {
+        ABC = "suresh"
+    }
+    stages {
+        stage 'deploy' {
+            steps{
+                sh "yum update -y"
+            }
+        }
+    }
+}
